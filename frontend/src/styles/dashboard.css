@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* MAIN LAYOUT */
+
+.main-layout {
+  display: flex;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  width: 100%;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+/* DESKTOP CONTENT SPACING */
+
+@media (min-width: 992px) {
+  .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* PAGE TITLES */
+
+.page-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  margin-bottom: 24px;
+  font-size: 17px;
+}
+
+/* CARDS */
+
+.custom-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.filter-card {
+  padding: 22px;
+}
+
+.table-card {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* TABLE */
+
+.table {
+  min-width: 1000px;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  font-weight: 700;
+  color: #111827;
+  border-bottom: 2px solid #dee2e6;
+  padding: 16px 12px;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  padding: 16px 12px;
+}
+
+/* BADGES */
+
+.badge {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+
+/* SIDEBAR */
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.sidebar-link:hover {
+  color: #0d6efd;
+}
+
+/* LOGIN */
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+}
+
+/* CSV PREVIEW */
+
+.upload-preview-table {
+  overflow-x: auto;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+
+  .page-subtitle {
+    font-size: 15px;
+  }
+
+  .custom-card {
+    border-radius: 12px;
+  }
+
+  .filter-card {
+    padding: 16px;
+  }
+
+  .table-card {
+    padding: 14px;
+  }
+
+  .table {
+    min-width: 850px;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media (max-width: 576px) {
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .main-content {
+    padding: 12px;
+  }
+
+  .login-card {
+    padding: 24px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+}

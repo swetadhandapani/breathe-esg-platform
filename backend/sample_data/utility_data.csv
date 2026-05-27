@@ -1,0 +1,4 @@
+MeterID,Facility,Consumption,Unit,BillingStart,BillingEnd
+MTR-1001,Chennai Office,12000,kWh,2026-04-01,2026-04-30
+MTR-1002,Berlin Plant,15,MWh,2026-04-01,2026-04-30
+MTR-1003,Houston Warehouse,-400,kWh,2026-04-01,2026-04-30

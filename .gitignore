@@ -1,0 +1,24 @@
+# Python virtual environment
+env/
+venv/
+backend/env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# VSCode
+.vscode/
+
+# Environment variables
+.env
