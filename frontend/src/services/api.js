@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://breathe-esg-platform-uid2.onrender.com",
+  baseURL: "https://breathe-esg-platform-uid2.onrender.com/api/",
 });
 
 API.interceptors.request.use((config) => {
